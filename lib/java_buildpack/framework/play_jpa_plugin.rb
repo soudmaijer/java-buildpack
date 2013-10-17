@@ -63,7 +63,7 @@ module JavaBuildpack::Framework
     end
 
     def play20?(root)
-      JavaBuildpack::Util::PlayUtils.version(root) =~ /2.0.[\d]+/
+      JavaBuildpack::Util::PlayUtils.version(root) =~ /^2\.0(\.[\d]+)?$/
     end
 
     def uses_jpa?(root)

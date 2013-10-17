@@ -67,7 +67,7 @@ module JavaBuildpack::Container
           configuration: {}
       ).detect
 
-      expect(detected).to eq('play-0.0-0.0.0')
+      expect(detected).to eq('play-0.0.0')
     end
 
     it 'should detect a staged application with a start script and a suitable Play JAR' do

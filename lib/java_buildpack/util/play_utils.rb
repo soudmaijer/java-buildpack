@@ -85,7 +85,7 @@ module JavaBuildpack::Util
     # @return [String, nil] the version of the Play application
     def self.version(root)
       play_jar = lib_play_jar(root) || staged_play_jar(root)
-      play_jar.match(/.*play_(.*)\.jar/)[1]
+      play_jar.match(/.*play_.*-(.*)\.jar/)[1]
     end
 
     private
