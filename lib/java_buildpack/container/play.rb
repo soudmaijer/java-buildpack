@@ -57,7 +57,7 @@ module JavaBuildpack::Container
 
     protected
 
-    # The unique indentifier of the component, incorporating the version of the dependency (e.g. +play-2.2.0+)
+    # The unique identifier of the component, incorporating the version of the dependency (e.g. +play-2.2.0+)
     #
     # @param [String] version the version of the dependency
     # @return [String] the unique identifier of the component
