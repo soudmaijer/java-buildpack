@@ -3,12 +3,14 @@
 [![Dependency Status](https://gemnasium.com/cloudfoundry/java-buildpack.png)](http://gemnasium.com/cloudfoundry/java-buildpack)
 [![Code Climate](https://codeclimate.com/github/cloudfoundry/java-buildpack.png)](https://codeclimate.com/github/cloudfoundry/java-buildpack)
 
-The `java-buildpack` is a [Cloud Foundry][] buildpack for running Java applications.  It is designed to run most Java applications with no additional configuration, but supports configuration of the standard components, and extension to add custom components.
+The `java-buildpack` is a [Cloud Foundry][] buildpack for running Java applications. It is designed to run most Java applications with no additional configuration, but supports configuration of the standard components, and extension to add custom components.
+
+Runs Java 8 by default.
 
 ## Usage
 To use this buildpack specify the URI of the repository when pushing an application to Cloud Foundry:
 
-    cf push --buildpack https://github.com/cloudfoundry/java-buildpack
+    cf push --buildpack https://github.com/soudmaijer/java-buildpack
 
 ## Configuration and Extension
 The buildpack supports configuration and extension through the use of Git repository forking.  The easiest way to accomplish this is to use [GitHub's forking functionality][] to create a copy of this repository.  Make the required configuration and extension changes in the copy of the repository.  Then specify the URL of the new repository when pushing Cloud Foundry applications.  If the modifications are generally applicable to the Cloud Foundry community, please submit a [pull request][] with the changes.
