@@ -19,6 +19,5 @@ repository_root: "http://download.pivotal.io.s3.amazonaws.com/openjdk/{platform}
 version: 1.8.0_+
 memory_heuristics:
   heap: 75
-  permgen: 10
   stack: 5
   native: 10
